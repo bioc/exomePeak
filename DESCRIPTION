@@ -26,4 +26,4 @@ Description: The package is developed for the analysis of
         questions.
 License: GPL-2
 Depends: Rsamtools, GenomicFeatures (>= 1.0.0), rtracklayer
-biocViews: Sequencing, Sequencing, MethylSeq, RNASeq
+biocViews: Sequencing, MethylSeq, RNASeq
