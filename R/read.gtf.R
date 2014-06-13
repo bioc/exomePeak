@@ -24,7 +24,10 @@
   # try the internet method
   op <- options(warn = (-1))
   ID = keys(txdb, "TXID")
-  temp = select(txdb, ID , c(cols(txdb))[c(9:12,13,16)], "TXID")
+  ##columns <- c(columns(txdb))[c(9:12,13,16)] ## UNSAFE approach
+  ## safer approach:
+  columns <- c("EXONCHROM","EXONSTRAND","EXONSTART","EXONEND","GENEID","TXNAME")
+  temp = select(txdb, ID , columns, "TXID")
   options(op)
 
   # get the anno
