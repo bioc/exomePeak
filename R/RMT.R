@@ -106,8 +106,8 @@ RMT <- function(
   #remove overlaps
   overlaps <- findOverlaps(ori_peak,ori_peak)
   matrix_overlap <- matrix(0,length(overlaps),2)
-  matrix_overlap[,1] <- overlaps@queryHits
-  matrix_overlap[,2] <- overlaps@subjectHits
+  matrix_overlap[,1] <- queryHits(overlaps)
+  matrix_overlap[,2] <- subjectHits(overlaps)
   
   num <- c(rep(0,length(ori_peak)))
   
