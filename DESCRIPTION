@@ -12,4 +12,3 @@ Depends: Rsamtools, GenomicFeatures (>= 1.14.5), rtracklayer,
         GenomicAlignments
 biocViews: Sequencing, HighThroughputSequencing, Methylseq, RNAseq
 NeedsCompilation: no
-Packaged: 2015-12-25 08:41:32 UTC; bioinfo
